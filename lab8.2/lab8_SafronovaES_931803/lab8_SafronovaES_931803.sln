@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab8_SafronovaES_931803", "lab8_SafronovaES_931803\lab8_SafronovaES_931803.csproj", "{DFC3F092-39D1-4E6E-9FAE-BF282D9C2158}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DFC3F092-39D1-4E6E-9FAE-BF282D9C2158}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFC3F092-39D1-4E6E-9FAE-BF282D9C2158}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFC3F092-39D1-4E6E-9FAE-BF282D9C2158}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFC3F092-39D1-4E6E-9FAE-BF282D9C2158}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0D9532D-6DB7-4796-A124-3258FC29231E}
+	EndGlobalSection
+EndGlobal
