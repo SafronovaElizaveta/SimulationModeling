@@ -62,18 +62,36 @@ namespace lab8_SafronovaES_931803
 
             var rand = new Random();
             
-            var a = rand.Next(0, 100);
+            var a = rand.Next(1, 100);
 
             p1 = (double)_getP1.Value;
             p2 = (double)_getP2.Value;
-            p3 = (double)_getP2.Value;
+            p3 = (double)_getP3.Value;
 
-            if (a < p1)
-                label1.Text = "Yes";
-            else if (p1 <= a && a < p1 + p2)
-                label1.Text = "No";
-            else
-                label1.Text = "May be";
+            double[] prob = new double[3] { p1, p2, p3 };
+
+            Dictionary<int, string> answer = new Dictionary<int, string>(3);
+            answer.Add(1, "Yes");
+            answer.Add(2, "No");
+            answer.Add(3, "May be");
+
+            int i = 0;
+
+
+            foreach (int p in prob)
+            {
+                if (a > 0)
+                {
+                    a -= p;
+                    i++;
+                }
+                else
+                {
+                    break;
+                }
+            }
+            label1.Text = answer[i];
+
 
         }
 
@@ -87,7 +105,7 @@ namespace lab8_SafronovaES_931803
 
         private void Change(object sender, EventArgs e)
         {
-            if ((p1+p2+p3)!=100)
+            if ((_getP1.Value + _getP2.Value + _getP3.Value) !=100)
                 _getP3.Value = 100- _getP1.Value - _getP2.Value;
         }
 
